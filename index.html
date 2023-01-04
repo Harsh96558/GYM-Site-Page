@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Site</title>
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            background: url(./gym\ main.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;    
+        }
+        .left{
+          /* border: 2px solid greenyellow; */
+            display:inline-block;
+            position: absolute;
+             left: 30px;
+            top: 8px;
+           
+
+        }
+        .mid{
+            /* border: 2px solid red; */
+            display: block;
+            margin: 8px auto;
+            width: 40%;
+           
+          
+            
+
+        }
+        .right{
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 8px;
+            
+
+        }
+
+        
+        .navbar li{
+           
+                  display: inline-block; 
+           list-style: none;
+            
+        }
+       .navbar li a{
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+       }
+       a.active:hover , .navbar a:hover  {
+        color: rgb(140, 140, 217);
+        text-decoration: underline;
+
+       }
+       
+      img{
+       height: 50px;
+        width: 136px;
+      }
+      .left div{
+        text-align: center;
+    color: aqua;
+      }
+    .btn{
+        border: 1px solid white;
+        margin: 9px;
+        background-color: black;
+        color: white;
+        padding: 2px 2px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+    }
+    .btn:hover{
+        background-color: gray;
+    }
+    .container{
+      border: 2px solid white;
+      margin: 110px 50px;
+      width: 25%;
+      padding: 30px;
+      border-radius: 10px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-weight: bold;
+           
+    }
+   .container h1{
+      color: cornflowerblue;
+      text-align: center;
+    }
+    .formgroup input{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-weight: bold;
+           display: block;
+           width: 300px;
+           margin: 4px auto;
+           border-radius: 5px;
+           border: 2px solid black;
+
+
+    }
+    .formgroup .btn{
+          width: 300px;
+          margin: 4px auto;
+          display: block;
+        }
+       
+         @media only screen and (max-width: 1500px){
+          body{
+            display: block;
+          width: 620px;
+          height: 500px;
+          }
+          .left{
+            left: 15px;
+            top: 4px;
+          }
+           img{
+            height: 25px;
+        width: 68px;
+
+          }
+          .left div{
+            font-size: 20px;
+          }
+          .mid{
+            /* border: 2px solid red; */
+           
+           
+            width: 80%;
+            margin: 4px;
+            padding: 4px;
+            justify-content: center;
+            align-items: center;
+           
+          
+            
+
+        }
+          .right{
+            /* border: 2px solid green; */
+           
+            float: right;
+            
+
+        }
+        .container{
+      
+      margin: 55px 25px;
+      width: 30%;
+      padding: 15px;
+     
+           
+    }
+    .formgroup input{
+      
+          
+           width: 150px;
+           margin: 4px auto;
+           
+
+
+    }
+    .formgroup .btn{
+      width: 150px;
+           margin: 4px auto;
+         
+        }
+
+         }
+          
+        
+    </style>
+</head>
+<body>
+       <header class="header">
+        <div class="left">
+          <img src="./GYM2.jpg" alt="">
+          <div >HARSH'S GYM</div>
+        </div>
+        <div class="mid">
+              <ul class="navbar">
+                <li> <a href="#" class="active">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#"> Fitness Calculator</a></li>
+                <li> <a href="#">Contact us</a> </li>
+            </ul>
+            
+        </div>
+        <div class="right">
+          <button class="btn">Call us now</button>
+          <button class="btn">Email us</button>
+        </div>
+       </header>
+
+       <div class="container">
+       <h1>Join the Best GYM of INDIA </h1>
+      <form action="noaction.php"></form>
+      <div class="formgroup">
+
+        <input type="text" placeholder="Enter Your Name">
+        <input type="text" placeholder="Enter Your Age">
+        <input type="text" placeholder="Enter Your Phone Number">
+        <input type="text" placeholder="Enter Your Gender">
+        <button class="btn">Submit</button>
+
+        
+        
+      </div>
+
+       </div>
+    
+</body>
+
+</html>
